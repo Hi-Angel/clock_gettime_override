@@ -1,0 +1,13 @@
+[package]
+name = "clock_gettime_override"
+version = "0.1.0"
+authors = ["Konstantin Kharlamov <Hi-Angel@yandex.ru>"]
+edition = "2018"
+
+[dependencies]
+libc = "0.2.*"
+lazy_static = "1.2.*"
+
+[lib]
+name = "clock_gettime_override"
+crate-type = ["cdylib"]
