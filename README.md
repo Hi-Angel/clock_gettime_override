@@ -21,4 +21,4 @@ Just place it into `LD_PRELOAD`. Example from my system:
 
 1. How do I know if a game is using this function?
 
-    Run the game, find its pid with `ps aux | grep game`, and attach to it with `strace -p 7949`. You'll see a lot of system calls that the game is making, in particular something about time should come up to get called a lot. If it's a function `clock_gettime`, then you know you can try to use the library. 
+    Run the game, find its pid with `ps aux | grep game`, and attach to it with `strace -p game-pid`. You'll see a lot of system calls that the game is making, in particular something about time should come up to get called a lot. If it's a function `clock_gettime`, then you know you can try to use the library. 
