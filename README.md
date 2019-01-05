@@ -1,4 +1,4 @@
-It's an overloaded function `clock_gettime` to slow down its reports by 4 times. It's useful to slow down games, in particular is tested wth Alien Shooter 2 running in WINE.
+It's an overloaded function `clock_gettime` to slow down its reports by 4 times. It's useful to slow down games, in particular is tested wth Alien Shooter 2 and Dungeon Nightmares running in WINE.
 
 # Building
 
