@@ -13,7 +13,7 @@ to build 64 and 32 bit versions. You may need to add the `i686-unknown-linux-gnu
 
 # Using
 
-Just place it into `LD_PRELOAD`. Example from my system:
+Just place paths into `LD_PRELOAD`. Unless you're sure whether you need 32 or 64 bit version, I recommend using them both. It won't hurt, the wrong bittness version just won't get loaded. Example from my system:
 
 	LD_PRELOAD="/home/constantine/Projects/clock_gettime_override/target/i686-unknown-linux-gnu/release/libclock_gettime_override.so /home/constantine/Projects/clock_gettime_override/target/release/libclock_gettime_override.so" wine AlienShooter.exe
 
