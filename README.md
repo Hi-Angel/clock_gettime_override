@@ -1,6 +1,10 @@
-This library creates a "bullet-time" effect in any game it is preloaded to.
+This library creates a "bullet-time" aka "slo-mo" effect in any game it is preloaded to.
 
 Underneath it overloads a function `clock_gettime` to slow down its reports by 4 times. This was tested wth Alien Shooter 2, Dungeon Nightmares, and GTAⅣ running in WINE.
+
+# Binaries
+
+If you don't want to build it yourself, there's an archive with prebuilt libraries on [releases page](https://github.com/Hi-Angel/clock_gettime_override/releases)
 
 # Building
 
@@ -11,7 +15,7 @@ cargo build --release
 cargo build --release --target i686-unknown-linux-gnu
 ```
 
-to build 64 and 32 bit versions. You may need to add the `i686-unknown-linux-gnu` target by `rustup target install i686-unknown-linux-gnu`.
+to build 64 and 32 bit versions. If you get an error `note: the i686-unknown-linux-gnu target may not be installed`, you may need to add the `i686-unknown-linux-gnu` target, e.g. with `rustup target install i686-unknown-linux-gnu`.
 
 # Using
 
